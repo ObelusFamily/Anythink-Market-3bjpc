@@ -21,7 +21,6 @@ range(0, 100, 1)
         user.username = "u" + rand;
         user.email = user.username + "@fake.com";
         user.setPassword("hey " + user.username);
-        user.save()
 
         var item = new Item();
         item.title = "i" + rand;
