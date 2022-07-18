@@ -3,14 +3,21 @@ import agent from "../../agent";
 import logo from "../../imgs/logo.png";
 
 const Banner = (props) => {
-
   const searchHandler = (ev) => {
     ev.preventDefault();
     const title = ev.target.value;
     if (title.length >= 3) {
-      props.onSearchChange(title, (page) => agent.Items.byTitle(title, page), agent.Items.byTitle(title))
+      props.onSearchChange(
+        title,
+        (page) => agent.Items.byTitle(title, page),
+        agent.Items.byTitle(title)
+      );
     } else {
-      props.onSearchChange("", (page) => agent.Items.all(page), agent.Items.all())
+      props.onSearchChange(
+        "",
+        (page) => agent.Items.all(page),
+        agent.Items.all()
+      );
     }
   };
 
@@ -28,7 +35,7 @@ const Banner = (props) => {
             onChange={searchHandler}
           />
           <span> the cool stuff.</span>
-          </div>
+        </div>
       </div>
     </div>
   );
