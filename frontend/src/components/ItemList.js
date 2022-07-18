@@ -15,7 +15,7 @@ const ItemList = (props) => {
           <div className="col-sm-6">
             <div className="card bg-light text-center">
               <div className="card-body">
-                <h5 class="card-title">
+                <h5 className="card-title">
                   <i className="ion-sad" style={{ fontSize: "xxx-large" }}></i>
                 </h5>
                 <p className="card-text">
