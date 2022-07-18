@@ -28,10 +28,10 @@ const Banner = (props) => {
       <div className="container p-4 text-center">
         <img src={logo} alt="banner" />
         <div className="input-group input-group-lg align-items-center justify-content-center">
-          <span id="get-part" className="pr-1">
+          <span className="pr-1">
             A Place to{" "}
           </span>
-          <span className="pr-1" onClick={() => setShowInput(true)}>
+          <span  id="get-part" className="pr-1" onClick={() => setShowInput(true)}>
             get
           </span>
           {showInput ? (
